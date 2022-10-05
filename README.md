@@ -1,5 +1,5 @@
 # Creating an article: case study for Creative Practice #1
-![theory-module-3-cover](https://user-images.githubusercontent.com/111085510/194138037-9589f1ef-2362-4176-b35d-a0c2a64ce913.jpeg)
+
 ## The outlines
 As a UX/UI designer, it was important for me to learn the basics of the front-end for my work to:
 - Build better ideas based on feasible solutions
