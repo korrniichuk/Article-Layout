@@ -1,0 +1,322 @@
+:root {
+    font-family: "Arial", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.3333;
+
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background: #89B8C2;
+
+    margin: 12px;
+}   
+
+nav {
+    background: #CCE9F4;
+
+    border-radius: 8px;
+    margin-bottom: 16px;
+    padding-bottom: 6px;
+}
+
+.nav-caption {
+    font-family: "Arial Black", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 900;
+
+    text-align: center;
+
+    padding: 10px;
+
+    display: block;
+}
+
+.nav {
+    list-style: none;
+
+    padding-left: 0; 
+    margin-top: 3px;
+    margin-bottom: 0;
+}
+
+.nav > li {
+    text-align: center;
+
+    padding: 0;
+}
+
+.nav > li > a {
+    padding: 6px 10px;
+
+    display: block;
+}
+
+.nav > li > a:hover {
+    background: #FFFFFF;
+}
+
+a {
+    color: #006EBE;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #0B257D;
+}
+
+a:hover {
+    color: #5EAAE0;
+}
+
+article {
+    background: #FFFFFF;
+
+    border-radius: 8px 8px 0 0;
+    padding: 16px;
+}
+
+article header {
+    line-height: 1.166666;
+
+    background: #E9E9E9;
+
+    border-radius: 8px;
+    padding: 8px;
+}
+
+figure {
+    background: #CCE9F4;
+
+    border-radius: 10px;
+    margin: 16px 0;
+}
+
+figure > img {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+
+    border-radius: 10px 10px 0 0;
+}
+
+ol {
+    list-style: none;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+ol > li {
+    border-bottom: 1px solid #89B8C2;
+    padding: 10px;
+}
+
+ol > li::before {
+    content: counter(list-item) ". ";
+}
+
+ol>li:last-child {
+    border-bottom: 0;
+}
+
+ol > li:nth-child(odd) {
+    background: #EFFAFF;
+}
+
+ol > li:nth-child(4) {
+    background: #F7FFEF;
+}
+
+footer {
+    line-height: 1.166666;
+
+    background: #CCE9F4;
+
+    border-radius: 0 0 8px 8px;
+    padding: 20px;
+}
+
+.copyright,
+.imprint {
+    display: block;
+}
+
+.bullet {
+    display: none;
+}
+
+.copyright {
+    margin-bottom: 6px;
+}
+
+h1 {
+    font-family: "Arial Black", sans-serif;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 1.416666;
+
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+h2 {
+    font-family: "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.15;
+
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+p + h2 {
+    margin-top: 16px;
+}
+
+figcaption {
+    font-family: "Georgia", serif;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.75;
+    text-align: center;
+
+    padding: 10px;
+}
+
+@media screen and (min-width: 620px) {
+    :root {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    body {
+        margin: 24px 24px 30px;
+    }
+
+    nav {
+        padding-bottom: 0;
+
+        display: inline-block;
+    }
+
+    .nav-caption {
+        display: none;
+    }
+
+    .nav {
+        margin-top: 0;
+    }
+
+    .nav > li {
+        display: inline-block;
+    }
+
+    .nav > li > a {
+    border-radius: 8px;
+    }
+
+    .nav-wrapper,
+    article,
+    footer {
+        margin-right: auto;
+        margin-left:auto;
+
+        max-width: 680px;
+    }
+
+    article {
+        padding: 16px 30px;
+    }
+
+    article header {
+        font-size: 12px;
+        line-height: 1.15;
+    }
+
+    figure {
+        margin-top: 8px;
+        padding: 20px;
+    }
+
+    figure > img {
+        border-radius: 12px;
+    }
+
+    figcaption {
+        padding: 10px 0 0;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .copyright,
+    .imprint,
+    .bullet {
+        display: inline;
+    }
+
+    h1 {
+        font-size: 52px;
+        line-height: 1.41019;
+    }
+
+    h2 {
+        font-size: 28px;
+        line-height: 1.15;
+    }
+}
+
+@media screen and (min-width: 820px) {
+    body {
+        margin: 64px 64px 39px;
+    }
+
+    nav {
+        padding: 4px;
+
+        display: flex;
+    }
+
+    .nav {
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    .nav-wrapper,
+    article,
+    footer {
+        max-width: 800px;
+    }
+
+    article {
+        padding: 30px 60px;
+    }
+
+    figure {
+        margin-top: 16px;
+    }
+    
+    figure > img {
+        border-radius: 4px 12px 4px 28px;
+    }
+}
